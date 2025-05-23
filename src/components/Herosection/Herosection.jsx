@@ -17,7 +17,7 @@ const Herosection = () => {
           initial={{ y: -90, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mt-14 text-xl text-center font-semibold md:text-2xl md:text-left md:mt-0"
+          className="mt-14 text-2xl text-center font-semibold md:text-2xl md:text-left md:mt-0"
         >
           Hi, I am
         </motion.p>
@@ -26,7 +26,7 @@ const Herosection = () => {
           initial={{ y: -90, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-xl font-bold text-center md:text-6xl md:text-left"
+          className="text-4xl font-bold text-center md:text-6xl md:text-left"
         >
           {/* <TypingAnimation>Koshish Khadka</TypingAnimation> */}
           Koshish Khadka
@@ -60,7 +60,11 @@ const Herosection = () => {
             transition={{ duration: 0.5 }}
             className="bg-[#6A5ACD] text-white text-sm py-2 px-2 md:px-4 md:py-3 rounded-md   "
           >
+            <a href="#projects">
+
             View my Work
+
+            </a>
           </motion.button>
           <motion.button
             whileHover={{ scale: 0.8 }}
@@ -83,7 +87,7 @@ const Herosection = () => {
         <img
           src="https://i.pinimg.com/736x/45/47/1a/45471a9cd1644120501cd2643a31888c.jpg"
           alt="Professional photo"
-          className="w-4/5 h-[90%] object-cover rounded-xl shadow-lg"
+          className="w-3/4 h-[80%] object-cover rounded-xl shadow-lg md:max-w-[580px] md:max-h-[1000]"
         />
       </motion.div>
     </section>

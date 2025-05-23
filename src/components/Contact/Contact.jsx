@@ -16,18 +16,18 @@ const Contact = () => {
         >
           <p className="text-3xl font-bold md:text-6xl pb-4">Let's work</p>
           <p className="text-3xl font-bold md:text-6xl">together</p>
-          <div className="mt-5 md:text-start space-y-2">
+          <div className="mt-8 flex flex-col justify-center items-center md:items-start space-y-2">
             <Mail />
             <p>Mail</p>
             <p>koshishkhadka364@gmail.com</p>
           </div>
-          <div className="mt-5 md:text-start space-y-2">
-     <MapPinHouse />
+          <div className="mt-8 flex flex-col justify-center items-center md:items-start space-y-2">
+            <MapPinHouse />
             <p>Address</p>
             <p>Kapan,kathmandu</p>
           </div>
-          <div className="mt-5 md:text-start space-y-2">
-            <Phone/>
+          <div className="mt-8 flex flex-col justify-center items-center md:items-start space-y-2">
+            <Phone />
             <p>Phone</p>
             <p>9843023686</p>
           </div>

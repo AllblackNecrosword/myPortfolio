@@ -31,7 +31,7 @@ const Project = () => {
   return (
     <div className="w-5/6 m-auto mt-14">
       <motion.h1
-      id="projects"
+        id="projects"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
@@ -39,17 +39,28 @@ const Project = () => {
       >
         PROJECTS
       </motion.h1>
+      <motion.p
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="text-center pt-3 lg:text-xl "
+      >
+        A collection of hands-on projects where I applied and expanded my skills
+        in full-stack development.
+      </motion.p>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="md:flex  justify-evenly flex-wrap"
+        className="md:flex justify-evenly flex-wrap"
       >
         {project.map((elements, index) => {
           return (
             <Card
               key={index}
-              className="mt-12 md:w-xl transition-all duration-200 delay-100 ease-in-out hover:scale-105"
+              className="group mt-12 md:w-xl transition-all duration-200 delay-100 ease-in-out 
+                   focus-within:scale-105 lg:hover:scale-105"
+              tabIndex={0} // makes the whole card focusable
             >
               <CardHeader>
                 <CardTitle className="bg-amber-300 m-auto">
@@ -63,9 +74,10 @@ const Project = () => {
                   {elements.name}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="w-full  flex justify-between">
-                <Button>Demo</Button>
-                <Button>Github</Button>
+              <CardContent className="w-full flex justify-between">
+                {/* Make buttons focusable so focus-within works */}
+                <Button tabIndex={-1}>Demo</Button>
+                <Button tabIndex={-1}>Github</Button>
               </CardContent>
             </Card>
           );

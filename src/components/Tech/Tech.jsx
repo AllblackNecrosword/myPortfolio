@@ -162,7 +162,7 @@ const Tech = () => {
             Tech Stack
           </h1>
           <p className="text-gray-300 lg:text-xl mt-4">
-            We use the best tech stack on the market.
+            Buliding sleek, scalable and modern web app with the power of latest technologies.
           </p>
         </div>
         <Marquee pauseOnHover className="[--duration:20s]">
